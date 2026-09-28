@@ -1,0 +1,56 @@
+.navbar{
+    color: white;
+    margin-right: 150px;
+}
+.logo_image{
+    width: 50px;
+    height: 50px;
+}
+.logo_titile{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+}
+.logo_span{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: oklab(0.75 0.102507 0.151596 / 0.8);
+}
+.nav_link{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.colorlink{
+    color: oklch(70.8% 0 0);
+}
+.colorlink:hover{
+    color: white;
+}
+.start_read{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+     background-image: linear-gradient(to left,#f54a00,#ff6700);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+:global(.active).nav_link{
+    background-image: linear-gradient(to left,#f54a00,#ff6700);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    color: white;
+}

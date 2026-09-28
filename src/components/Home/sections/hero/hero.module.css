@@ -1,0 +1,164 @@
+.header {
+  background-color: #0a0a0a;
+
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 95, 0, 0.25), transparent 15%),
+    radial-gradient(circle at 75% 65%, rgba(255, 95, 0, 0.18), transparent 12%),
+    linear-gradient(#242424 1px, transparent 1px),
+    linear-gradient(90deg, #242424 1px, transparent 1px);
+  background-size:  100% 100%,
+    100% 100%,
+    40px 40px,
+    40px 40px;
+  padding-top: 100px;
+}
+
+
+.glowDot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff5f00;
+  border-radius: 50%;
+  animation: blink 2.5s infinite;
+  -webkit-animation: blink 2.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 5px #ff5f00;
+  }
+
+  50% {
+    opacity: 0.2;
+    box-shadow: 0 0 20px #ff5f00;
+  }
+}
+
+.ripple {
+  width: 10px;
+  height: 10px;
+  background-color: #ff5f00;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ripple::before,
+.ripple::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #ff5f00;
+  border-radius: 50%;
+  animation: ripple 2s infinite;
+}
+
+.ripple::after {
+  animation-delay: 1s;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.wellcomeh2{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklch(0.87 0 0);
+}
+.wellcome{
+    border:1px solid #5c2f0e;
+    background-color: #24160b;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 200px;
+}
+.descover{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.orange{
+        background: linear-gradient( to left, #ce5702, #f2ad00);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+}
+.vission{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    color: oklch(0.708 0 0);
+    
+    padding-top: 50px;
+}
+.discovery_btn{
+     background-color: #ee5e0f;
+}
+.discovery_btn ,.learn_more_btn{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.learn_more_btn{
+    border: 1 solid #2f2e2d;
+    background-color: transparent;
+}
+.learn_more_btn:hover{
+    color: #ee5e0f;
+    border: none;
+    border: 1px solid #ee5e0f;
+    background-color: #ce570234;
+    
+}
+.card{
+    background-color:#161514 ;
+    border: 1px solid #262626 ;
+}
+.logo_card{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    color:oklch(0.705 0.213 47.604) ;
+}
+
+.counter_card{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color:#fa9e1e;
+}
+
+.desc_card{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:oklch(0.556 0 0);
+}

@@ -1,0 +1,335 @@
+.header {
+  background-color: #0a0a0a;
+
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 95, 0, 0.25), transparent 15%),
+    radial-gradient(circle at 75% 65%, rgba(255, 95, 0, 0.18), transparent 12%),
+    linear-gradient(#242424 1px, transparent 1px),
+    linear-gradient(90deg, #242424 1px, transparent 1px);
+  background-size:  100% 100%,
+    100% 100%,
+    40px 40px,
+    40px 40px;
+  padding-top: 100px;
+}
+
+
+.glowDot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff5f00;
+  border-radius: 50%;
+  animation: blink 2.5s infinite;
+  -webkit-animation: blink 2.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 5px #ff5f00;
+  }
+
+  50% {
+    opacity: 0.2;
+    box-shadow: 0 0 20px #ff5f00;
+  }
+}
+
+.ripple {
+  width: 10px;
+  height: 10px;
+  background-color: #ff5f00;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ripple::before,
+.ripple::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #ff5f00;
+  border-radius: 50%;
+  animation: ripple 2s infinite;
+}
+
+.ripple::after {
+  animation-delay: 1s;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.wellcomeh2{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklch(0.87 0 0);
+}
+.wellcome{
+    border:1px solid #5c2f0e;
+    background-color: #24160b;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 200px;
+}
+.descover{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.orange{
+        background: linear-gradient( to left, #ce5702, #f2ad00);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+}
+.vission{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 39px;
+    color: oklch(0.708 0 0);
+    
+    padding-top: 50px;
+}
+
+.search{
+    background-color: #161616;
+    color: #737373;
+    width: 300px;
+    border: 1px solid #737373;
+}
+
+.clas{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklch(0.708 0 0);
+    border: 1px solid oklch(0.708 0 0);
+    background-color: #161616;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.searching{
+    background-color: #0a0a0a;
+    padding: 20px 0px;
+}
+
+.active{
+    background-color: #ff5f00;
+    border: none;
+    color: white;
+}
+.disp{
+    border: 1px solid #242424;
+    background-color: #161616;
+
+}
+
+.blog{
+  border: 1px solid #f54a00;
+  margin: 20px;
+  overflow: hidden;
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  height: 210px;
+}
+
+.image{
+  transition: transform 1s ease;
+
+}
+
+
+.blog:hover .image{
+   transform: scale(1.1);
+
+}
+
+.blog:hover .title{
+  color: #f54a00;
+}
+
+.category{
+    border:1px solid #5c2f0e;
+    background-color: #24160b;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px 15px;
+    color: #f25a09;
+     font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.time{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklch(0.556 0 0);
+}
+
+.title{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+}
+
+.excerpt{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: oklch(0.708 0 0);
+}
+
+.authImg
+{
+  width: 50px;
+  height: 50px;
+}
+
+.authName{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.date{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: oklch(0.556 0 0);
+}
+
+.more_read{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklch(0.705 0.213 47.604)
+;
+}
+
+
+.time{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:oklch(0.556 0 0)
+
+}
+
+
+.title{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.excerpt{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: oklch(0.708 0 0);
+}
+
+.authImg
+{
+  width: 40px;
+  height: 40px;
+}
+
+.authName{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.date{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: oklch(0.556 0 0);
+}
+
+.more_read{
+  color: #ff6800;
+  border: 1px solid #ff6800;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  padding: 10px;
+  background-color: #2e1e14;
+}
+.card:hover .title{
+    color: #f54a00;
+}
+
+.card:hover .more_read{
+    background-color: #f54a00;
+    color: #ffffff;
+}
+
+.card:hover .image{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.categ{
+    background-color: #0a0a0ac8;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+.detailes{
+    background-color: #161616;
+}

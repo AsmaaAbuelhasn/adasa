@@ -1,0 +1,95 @@
+.footer{
+    background-image: radial-gradient( 
+    circle at center,
+    #1d140a 0%,
+    #0a0a0a 45%
+    
+  );
+  padding: 50px;
+  color: white;
+}
+.logo{
+    background-color:#ff5f00 ;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+   
+}
+.logo_title ,  .title{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    position: relative;
+}
+.logo_title::after{
+    content: "";
+    position: absolute;
+    top:15px;
+    right: -35px;
+    width: 30px;
+    height: 1px;
+    background-image: linear-gradient( to left, #ce5702, #f2ad00);
+
+}
+.logo_desc ,.links{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: oklch(0.556 0 0);
+}
+.social{
+    background-color:#161616 ;
+     border: 2px solid #262626;
+     color: #737373;
+     margin-bottom: 10px;
+}
+.social:hover{
+    background-color:#ff5f00 ;
+    border: 1px solid #ff5f00;
+    color: white;
+}
+.links{
+    transition: all 0s;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    -o-transition: all 0s;
+    display: block;
+}
+.links:hover{
+    transform: translateX(-10px);
+    color: #ce5702;
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+}
+.links:hover::after{
+    content: ">";
+    position: absolute;
+    top:0px;
+    right: -15px;
+    width: 30px;
+    height: 1px;
+
+}
+.input{
+    background-color:#161616 ;
+    color: #737373;
+}
+.input:focus{
+    background-color:#161616 ;
+    border: 2px solid #ce5702;
+    box-shadow: none;
+}
+.btn{
+    background-color: #ce5702;
+    margin-top: 10px;
+}
+.orange{
+    color: #ce5702;
+}

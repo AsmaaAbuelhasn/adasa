@@ -1,0 +1,141 @@
+.section{
+  background:#111111;
+  padding: 50px;
+}
+.glowDot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff5f00;
+  border-radius: 50%;
+  animation: blink 2.5s infinite;
+  -webkit-animation: blink 2.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 5px #ff5f00;
+  }
+
+  50% {
+    opacity: 0.2;
+    box-shadow: 0 0 20px #ff5f00;
+  }
+}
+
+.ripple {
+  width: 10px;
+  height: 10px;
+  background-color: #ff5f00;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ripple::before,
+.ripple::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #ff5f00;
+  border-radius: 50%;
+  animation: ripple 2s infinite;
+}
+
+.ripple::after {
+  animation-delay: 1s;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+.wellcomeh2{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklch(0.87 0 0);
+}
+
+.wellcome{
+    border:1px solid #5c2f0e;
+    background-color: #24160b;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 150px;
+}
+
+.heading{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #ffffff;
+}
+.desc{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: oklch(0.708 0 0);
+}
+
+.cat_icon{
+  border: 1px solid #ff5f00;
+  color:#ff6900;
+  background-color: #2e1e14;
+}
+.cat_name{
+  font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+
+}
+
+.cat_count{
+  font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklab(0.999994 0.0000455677 0.0000200868 / 0.8);
+
+}
+.category{
+  background-color: #161616;
+  border: 1px solid #262626;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.cat_arrow{
+  background:#94949434;
+  opacity: 0;
+}
+.category:hover {
+  background-image: linear-gradient(to left bottom , #ec5b0d ,#eb9524);
+  transform:translateY(-10px);
+  -webkit-transform:translateY(-10px);
+  -moz-transform:translateY(-10px);
+  -ms-transform:translateY(-10px);
+  -o-transform:translateY(-10px);
+}
+
+.category:hover .cat_arrow{
+  opacity: 1;
+}
+

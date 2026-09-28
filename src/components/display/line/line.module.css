@@ -1,0 +1,184 @@
+.blog{
+  border: 1px solid #f54a00;
+  margin: 20px;
+  overflow: hidden;
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+  height: 210px;
+}
+
+.image{
+  transition: transform 1s ease;
+
+}
+
+
+.blog:hover .image{
+   transform: scale(1.1);
+
+}
+
+.blog:hover .title{
+  color: #f54a00;
+}
+
+.category{
+    border:1px solid #5c2f0e;
+    background-color: #24160b;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px 15px;
+    color: #f25a09;
+     font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.time{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklch(0.556 0 0);
+}
+
+.title{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: rgb(255, 255, 255);
+}
+
+.excerpt{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: oklch(0.708 0 0);
+}
+
+.authImg
+{
+  width: 50px;
+  height: 50px;
+}
+
+.authName{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.date{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: oklch(0.556 0 0);
+}
+
+.more_read{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: oklch(0.705 0.213 47.604)
+;
+}
+
+
+.time{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:oklch(0.556 0 0)
+
+}
+
+
+.title{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.excerpt{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: oklch(0.708 0 0);
+}
+
+.authImg
+{
+  width: 40px;
+  height: 40px;
+}
+
+.authName{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.date{
+   font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: oklch(0.556 0 0);
+}
+
+.more_read{
+  color: #ff6800;
+  border: 1px solid #ff6800;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  padding: 10px;
+  background-color: #2e1e14;
+}
+.card:hover .title{
+    color: #f54a00;
+}
+
+.card:hover .more_read{
+    background-color: #f54a00;
+    color: #ffffff;
+}
+
+.card:hover .image{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.categ{
+    background-color: #0a0a0ac8;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+.detailes{
+    background-color: #161616;
+}
